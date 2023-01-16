@@ -1,0 +1,68 @@
+
+
+.sun-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+	 background: linear-gradient(to bottom, #003366, #006699,#00bfff);
+}
+
+.sun {
+  width: 200px;
+  height: 200px;
+  background-color: #FDB813;
+  border-radius: 50%;
+  box-shadow: 0px 0px 60px 15px #FDB813;
+  animation: spin 20s linear infinite;	
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.sun-text {
+  color: #FDB813;
+  text-shadow: 0px 0px 20px #FDB813;
+  animation: shine 2s linear infinite;
+  position: relative;
+  left: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+@keyframes shine {
+  0% {
+    text-shadow: 0px 0px 20px #FDB813;
+  }
+  50% {
+    text-shadow: 0px 0px 40px #FDB813;
+  }
+  100% {
+    text-shadow: 0px 0px 20px #FDB813;
+  }
+}
+#fullscreen-btn {
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 4px;
+  background-color: #006699;
+  color: #fff;
+  border: none;
+	transition: background-color 0.2s ease;
+	position: relative;
+  left: 50px;
+}
+#fullscreen-btn:hover {
+  background-color: #004c66;
+  cursor: pointer;
+}
+#fullscreen-btn:active, #fullscreen-btn:focus {
+  background-color: #003344;
+}
